@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap');
+
+nav {
+    background-color: rgb(173, 60, 60);
+    height: 80px;
+    display: flex;
+    ul {
+        margin: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            img {
+                width: 60px;
+            }
+            p {
+                margin: 0;
+                font-family: 'Ubuntu';
+                color: gold;
+                font-size: 30px;
+            }
+        }
+    }
+}

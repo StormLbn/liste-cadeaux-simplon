@@ -1,0 +1,10 @@
+.containIDKDO {
+    height: 86.8vh;
+    background-image: url('../assets/img/xmas-cat.jpg');
+    background-size: cover;
+    background-position: center;
+    .overlay {
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
