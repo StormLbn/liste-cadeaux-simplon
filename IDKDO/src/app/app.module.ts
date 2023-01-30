@@ -11,8 +11,7 @@ import { PresentsListComponent } from './presents-list/presents-list.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    SearchBarComponent
-    ],
+    SearchBarComponent,
     PresentIdeaComponent,
     PresentsListComponent
   ],
