@@ -10,7 +10,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     AppComponent,
     HeaderComponent,
     SearchBarComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule
