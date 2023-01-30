@@ -4,6 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { PresentIdeaComponent } from './present-idea/present-idea.component';
+import { PresentsListComponent } from './presents-list/presents-list.component';
 
 @NgModule({
   declarations: [
@@ -11,6 +13,9 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     HeaderComponent,
     SearchBarComponent
     ],
+    PresentIdeaComponent,
+    PresentsListComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule
