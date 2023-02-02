@@ -10,10 +10,10 @@ import { PresentService } from '../services/present.service';
 export class PresentsListComponent implements OnInit{
 
   @Input() presentsList !: Present[];
+  @Input() listC!: Present[]
 
   constructor(private service : PresentService) {}
 
   ngOnInit() : void {
-    this.presentsList = this.service.getAllPresents();
   }
 }
