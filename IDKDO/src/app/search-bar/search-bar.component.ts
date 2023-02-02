@@ -45,7 +45,7 @@ export class SearchBarComponent implements OnInit {
   }
 
   generateQuery(): string {
-    let query : string = "Donne moi une liste Json de 2 idées cadeaux "
+    let query : string = "Donne moi une liste Json de 10 idées cadeaux "
     if (this.input) {
       if (!this.input.age) {
         if (this.input.gender) {
@@ -77,7 +77,7 @@ export class SearchBarComponent implements OnInit {
         console.log("Ajout interet");
       }
     }
-    query += "; je veux les résultats dans un fichier JSON comprenant : nom, description, image, prix."
+    query += "; je veux les résultats dans un fichier JSON avec les clés : nom, description, image, prix (en euros)."
     console.log(query);
     return query;
   }
