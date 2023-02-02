@@ -4,13 +4,10 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-
-    max-width: 800px;
-    min-width: 300px;
     padding: 15px;
-    background-color: white;
+    background-color: rgba(238, 238, 238, 0.6);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgb(41, 41, 41);
+    background-color: rgb(255 252 252 / 51%);
 }
 
 .present {
@@ -19,13 +16,15 @@
     h2 {
         margin: 5px 0;
         color: darkred;
+        font-family: 'Ubuntu';
     }
     a {
         text-decoration: none;
         color: inherit;
+        transition: ease-in-out .2s;
     }
     a:hover {
-        text-decoration: underline;
+        color: green;
     }
     p {
         margin: auto;

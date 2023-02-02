@@ -22,9 +22,10 @@ export class OpenAiService {
   
 
   getDataFromOpenAI() {
+
     from(this.openai.createCompletion({
       model: "text-davinci-003",
-      prompt: "Je souhaite une liste de cadeaux",
+      prompt: "Je souhaite une liste de cadeaux pour un enfant de 10 ans en json",
       max_tokens: 256
     })).pipe(
       filter(resp => !!resp && !!resp.data),

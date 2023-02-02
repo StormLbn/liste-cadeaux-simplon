@@ -2,4 +2,11 @@
     display: flex;
     flex-flow: column nowrap;
     gap: 10px;
+    height: 25em;
+    align-items: center;
+    margin-top: 1em;
+    overflow-y: auto;
+    .cardList {
+        width: 80%;
+    }
 }
