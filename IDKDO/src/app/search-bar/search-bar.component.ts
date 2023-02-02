@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { SearchInput } from '../models/search-input.model';
 import { OpenAiService } from '../open-ai.service';
+import { PresentService } from '../services/present.service';
 
 @Component({
   selector: 'app-search-bar',
@@ -12,8 +13,9 @@ export class SearchBarComponent implements OnInit {
 
   form !: FormGroup;
   @Input() input !: SearchInput;
+  data !: string;
 
-  constructor(private fb : FormBuilder, private openAi : OpenAiService) {}
+  constructor(private fb : FormBuilder, private openAi : OpenAiService, private service : PresentService) {}
 
   ngOnInit(): void {
     this.form = this.fb.group({
@@ -26,7 +28,7 @@ export class SearchBarComponent implements OnInit {
     })
   }
 
-  onSubmit(): void {
+  onSubmit() {
     const data = this.form.value;
 
     console.log(this.form.value);
@@ -38,12 +40,12 @@ export class SearchBarComponent implements OnInit {
       interest1 : data["interest1"],
       interest2 : data["interest2"],
       interest3 : data["interest3"]
-    }
-    this.openAi.getDataFromOpenAI(this.generateQuery());
+    };
+    this.openAi.getDataFromOpenAI(this.generateQuery())
   }
 
   generateQuery(): string {
-    let query : string = "Donne moi une liste Json de 10 idées cadeaux "
+    let query : string = "Donne moi une liste Json de 2 idées cadeaux "
     if (this.input) {
       if (!this.input.age) {
         if (this.input.gender) {

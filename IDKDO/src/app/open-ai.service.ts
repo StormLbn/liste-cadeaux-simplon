@@ -3,6 +3,7 @@ import { Configuration, OpenAIApi } from 'openai';
 import { filter, map } from 'rxjs';
 import { from } from 'rxjs/internal/observable/from';
 import { environment } from 'src/environments/environment.development';
+import { PresentService } from './services/present.service';
 
 
 @Injectable({
@@ -12,7 +13,7 @@ export class OpenAiService {
 
   data !: string;
 
-  constructor() { 
+  constructor(private service : PresentService) { 
   }
 
   readonly configuration = new Configuration({
@@ -21,7 +22,8 @@ export class OpenAiService {
 
   readonly openai = new OpenAIApi(this.configuration);
 
-  getDataFromOpenAI(text : string) {
+  getDataFromOpenAI(text : string){
+    let jsonData : string = "";
     from(this.openai.createCompletion({
       model: "text-davinci-003",
       prompt: text,
@@ -32,9 +34,8 @@ export class OpenAiService {
       filter((data: any) => data.choices && data.choices.length > 0 && data.choices[0].text),
       map(data => data.choices[0].text)
     ).subscribe(data => {
-        console.log(data);
-        this.data = data;
-        console.log(this.data);
+      console.log(data);
+      jsonData = data;
     });
   }
 }
