@@ -38,6 +38,7 @@ export class PresentService {
   savePresentsList(data : string) {
     this.presentsList = [];
     const jsonData = JSON.parse(data);
+    console.log(jsonData);
     for (let element of jsonData) {
       let present : Present = {
         title : element.nom,
