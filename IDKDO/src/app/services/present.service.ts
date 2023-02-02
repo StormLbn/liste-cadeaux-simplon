@@ -10,7 +10,7 @@ export class PresentService {
   @Input() presentsList : Present[] = [
     {title : "Idée cadeau n°1",
       url : "https://github.com/SiderealStorm/liste-cadeaux-simplon",
-      description : "Test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test",
+      description : "Test test test test test test test test test test ",
     },
     {
       title : "Test 1",
@@ -27,6 +27,7 @@ export class PresentService {
       url : "Url du test 2",
       description : "Test test test test test test test test test test test test test test test test test",
     },
+    
   ]
 
   getAllPresents() : Present[] {

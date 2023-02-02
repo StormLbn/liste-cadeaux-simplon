@@ -19,8 +19,6 @@ export class OpenAiService {
 
   readonly openai = new OpenAIApi(this.configuration);
 
-  
-
   getDataFromOpenAI(text : string) {
     from(this.openai.createCompletion({
       model: "text-davinci-003",
@@ -35,6 +33,4 @@ export class OpenAiService {
         console.log(data);
     });
   }
- 
-
 }
