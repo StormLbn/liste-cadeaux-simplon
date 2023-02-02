@@ -21,10 +21,10 @@ export class OpenAiService {
 
   
 
-  getDataFromOpenAI() {
+  getDataFromOpenAI(text : string) {
     from(this.openai.createCompletion({
       model: "text-davinci-003",
-      prompt: "Je souhaite une liste de cadeaux",
+      prompt: text,
       max_tokens: 256
     })).pipe(
       filter(resp => !!resp && !!resp.data),
