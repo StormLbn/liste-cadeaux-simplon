@@ -10,6 +10,8 @@ import { environment } from 'src/environments/environment.development';
 })
 export class OpenAiService {
 
+  data !: string;
+
   constructor() { 
   }
 
@@ -31,6 +33,8 @@ export class OpenAiService {
       map(data => data.choices[0].text)
     ).subscribe(data => {
         console.log(data);
+        this.data = data;
+        console.log(this.data);
     });
   }
 }

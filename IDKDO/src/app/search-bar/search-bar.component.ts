@@ -43,27 +43,25 @@ export class SearchBarComponent implements OnInit {
   }
 
   generateQuery(): string {
-    let query : string = "Donne moi une liste json d'idées cadeaux pour "
+    let query : string = "Donne moi une liste Json de 10 idées cadeaux "
     if (this.input) {
       if (!this.input.age) {
-        if (!this.input.gender) {
-          query += "une personne";
-        } else {
+        if (this.input.gender) {
           query += this.input.gender;
         }
       } else if (this.input.age >= 18) {
         if (!this.input.gender) {
-          query += "une personne de " + this.input.age + " ans";
+          query += "pour une personne de " + this.input.age + " ans";
         } else {
-          query += this.input.gender + " de " + this.input.age + " ans";
+          query += "pour " + this.input.gender + " de " + this.input.age + " ans";
         }
       } else {
         if (!this.input.gender) {
-          query += "un enfant de " + this.input.age + " ans";
+          query += "pour un enfant de " + this.input.age + " ans";
         } else if (this.input.gender == "un homme") {
-          query += "un garçon de " + this.input.age + " ans";
+          query += "pour un garçon de " + this.input.age + " ans";
         } else {
-        query += "une fille de " + this.input.age + " ans";
+        query += "pour une fille de " + this.input.age + " ans";
         }
       }
 
@@ -77,7 +75,7 @@ export class SearchBarComponent implements OnInit {
         console.log("Ajout interet");
       }
     }
-    // query = "donne-moi une liste d'idées cadeaux en json pour un garçon de 6 ans";
+    query += "; je veux les résultats dans un fichier JSON comprenant : nom, description, image, prix."
     console.log(query);
     return query;
   }

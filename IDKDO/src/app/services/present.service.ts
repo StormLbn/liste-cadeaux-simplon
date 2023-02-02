@@ -9,23 +9,27 @@ export class PresentService {
     
   @Input() presentsList : Present[] = [
     {title : "Idée cadeau n°1",
-      url : "https://github.com/SiderealStorm/liste-cadeaux-simplon",
+      imageUrl : "Url du test 2",
       description : "Test test test test test test test test test test ",
+      price : 6.66
     },
     {
       title : "Test 1",
-      url : "Url du test 1",
+      imageUrl : "Url du test 2",
       description : "Test test test test test test test test test test test test test test test test test",
+      price : 6.66
     },
     {
       title : "Test 2",
-      url : "Url du test 2",
+      imageUrl : "Url du test 2",
       description : "Test test test test test test test test test test test test test test test test test",
+      price : 6.66
     },
     {
       title : "Test 3",
-      url : "Url du test 2",
+      imageUrl : "Url du test 2",
       description : "Test test test test test test test test test test test test test test test test test",
+      price : 6.66
     },
     
   ]
