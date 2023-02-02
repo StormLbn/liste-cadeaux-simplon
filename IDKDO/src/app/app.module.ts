@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { PresentIdeaComponent } from './present-idea/present-idea.component';
 import { PresentsListComponent } from './presents-list/presents-list.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PresentsListComponent } from './presents-list/presents-list.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
