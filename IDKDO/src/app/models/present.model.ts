@@ -1,6 +1,6 @@
 export class Present {
-    title !: string;
+    nom !: string;
     description !: string;
     imageUrl !: string;
-    price !: string;
+    prix !: number;
 }

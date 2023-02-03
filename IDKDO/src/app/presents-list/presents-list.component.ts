@@ -12,11 +12,10 @@ import { PresentService } from '../services/present.service';
 export class PresentsListComponent implements OnInit{
 
   @Input() presentsList !: Present[];
+  @Input() listC!: Present[]
 
   constructor(private service : PresentService, private route : Router) {}
 
   ngOnInit() : void {
-    this.presentsList = this.service.getAllPresents();
-    this.route.navigateByUrl("recherche");
   }
 }

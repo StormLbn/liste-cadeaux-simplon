@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Present } from '../models/present.model';
 import { SearchInput } from '../models/search-input.model';
 import { OpenAiService } from '../open-ai.service';
 import { PresentService } from '../services/present.service';
@@ -15,6 +15,8 @@ export class SearchBarComponent implements OnInit {
   form !: FormGroup;
   @Input() input !: SearchInput;
   data !: string;
+  listC !: Present[]
+  load = false
 
   constructor(private fb : FormBuilder, private openAi : OpenAiService, private service : PresentService, private route : Router) {}
 
@@ -30,6 +32,7 @@ export class SearchBarComponent implements OnInit {
   }
 
   onSubmit() {
+    this.load = true;
     const data = this.form.value;
 
     console.log(this.form.value);
@@ -42,12 +45,18 @@ export class SearchBarComponent implements OnInit {
       interest2 : data["interest2"],
       interest3 : data["interest3"]
     };
-    this.openAi.getDataFromOpenAI(this.generateQuery())
-
+    this.openAi.getDataFromOpenAI(this.generateQuery()).subscribe({
+      next : data => this.data = data
+      , complete: ()=> {
+        this.load = false
+        this.listC = JSON.parse(this.data);
+        console.log(this.listC)
+      }
+    })
   }
 
   generateQuery(): string {
-    let query : string = "Donne moi une liste Json de 10 idées cadeaux "
+    let query : string = "Donne moi une liste Json de 8 idées cadeaux "
     if (this.input) {
       if (!this.input.age) {
         if (this.input.gender) {
