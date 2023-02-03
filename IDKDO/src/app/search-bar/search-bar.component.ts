@@ -17,8 +17,9 @@ export class SearchBarComponent implements OnInit {
   data !: string;
   listC !: Present[]
   load = false
+  descCadeaux !: Promise<string | undefined>[]
 
-  constructor(private fb : FormBuilder, private openAi : OpenAiService, private service : PresentService, private route : Router) {}
+  constructor(private fb : FormBuilder, private openAi : OpenAiService, private service : PresentService) {}
 
   ngOnInit(): void {
     this.form = this.fb.group({
@@ -50,7 +51,12 @@ export class SearchBarComponent implements OnInit {
       , complete: ()=> {
         this.load = false
         this.listC = JSON.parse(this.data);
-        console.log(this.listC)
+        //console.log(this.listC)
+
+        for(let i = 0; i < this.listC.length; i++){
+          this.openAi.getImageFromOpenApi(this.listC[i].nom)
+        }
+        
       }
     })
   }
