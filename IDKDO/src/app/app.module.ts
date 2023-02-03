@@ -14,12 +14,12 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     SearchBarComponent,
     PresentIdeaComponent,
-    PresentsListComponent
+    PresentsListComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

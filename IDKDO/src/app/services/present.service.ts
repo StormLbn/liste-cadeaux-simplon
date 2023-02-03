@@ -6,34 +6,7 @@ import { Present } from "../models/present.model";
 })
 export class PresentService {
 
-    
   @Input() presentsList !: Present[];
-  // = [
-  //   {title : "Idée cadeau n°1",
-  //     imageUrl : "Url du test 2",
-  //     description : "Test test test test test test test test test test ",
-  //     price : 6.66
-  //   },
-  //   {
-  //     title : "Test 1",
-  //     imageUrl : "Url du test 2",
-  //     description : "Test test test test test test test test test test test test test test test test test",
-  //     price : 6.66
-  //   },
-  //   {
-  //     title : "Test 2",
-  //     imageUrl : "Url du test 2",
-  //     description : "Test test test test test test test test test test test test test test test test test",
-  //     price : 6.66
-  //   },
-  //   {
-  //     title : "Test 3",
-  //     imageUrl : "Url du test 2",
-  //     description : "Test test test test test test test test test test test test test test test test test",
-  //     price : 6.66
-  //   },
-    
-  // ]
 
   savePresentsList(data : string) {
     this.presentsList = [];
