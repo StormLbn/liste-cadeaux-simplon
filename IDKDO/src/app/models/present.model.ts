@@ -1,6 +1,6 @@
 export class Present {
     nom !: string;
     description !: string;
-    imageUrl !: string;
+    imageUrl !: Promise<string | undefined>;
     prix !: number;
 }
