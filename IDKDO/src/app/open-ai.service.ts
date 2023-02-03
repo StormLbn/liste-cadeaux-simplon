@@ -4,6 +4,7 @@ import { Configuration, OpenAIApi } from 'openai';
 import { filter, map } from 'rxjs';
 import { from } from 'rxjs/internal/observable/from';
 import { environment } from 'src/environments/environment.development';
+import { Present } from './models/present.model';
 import { PresentService } from './services/present.service';
 
 
@@ -13,6 +14,7 @@ import { PresentService } from './services/present.service';
 export class OpenAiService {
 
   data !: string;
+  imgUrl !: Present[]
 
   constructor(private service : PresentService, private route : Router) { 
   }
@@ -33,5 +35,15 @@ export class OpenAiService {
       map(resp => resp.data),
       filter((data: any) => data.choices && data.choices.length > 0 && data.choices[0].text),
       map(data => data.choices[0].text))
+  }
+
+  async getImageFromOpenApi(text : string){
+  const response = await this.openai.createImage({
+    prompt: text,
+    n: 1,
+    size: "256x256",
+  });
+  console.log(response.data.data[0].url)
+    return response.data.data[0].url
   }
 }
