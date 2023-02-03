@@ -52,6 +52,8 @@ export class SearchBarComponent implements OnInit {
       if (!this.input.age) {
         if (this.input.gender) {
           query += this.input.gender;
+        } else {
+          query += "pour une personne"
         }
       } else if (this.input.age >= 18) {
         if (!this.input.gender) {
