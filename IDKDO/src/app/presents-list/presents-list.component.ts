@@ -17,5 +17,6 @@ export class PresentsListComponent implements OnInit{
   constructor(private service : PresentService, private route : Router) {}
 
   ngOnInit() : void {
+    this.route.navigateByUrl("recherche");
   }
 }

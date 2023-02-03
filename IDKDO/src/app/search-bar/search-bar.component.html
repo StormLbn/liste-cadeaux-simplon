@@ -1,3 +1,4 @@
+
 <form [formGroup] = "form" (ngSubmit) = "onSubmit()">
     <select class="selectSearch" type="text" formControlName = "gender">
         <option value="">Genre</option>
@@ -12,4 +13,3 @@
     <button mat-raised-button color="primary" [class.spinner]="load" [disabled]="load"><img src="../../assets/img/search.png" alt="search"></button>
 </form>
 
-<app-presents-list [listC] = "listC"></app-presents-list>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { OpenAiService } from './open-ai.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +11,6 @@ import { OpenAiService } from './open-ai.service';
 export class AppComponent {
   title = 'IDKDO';
 
-  constructor(private openAI : OpenAiService) {
-
-  }
   ngOnInit(){
   }
 }
