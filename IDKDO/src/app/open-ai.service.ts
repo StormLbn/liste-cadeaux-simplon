@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { Configuration, OpenAIApi } from 'openai';
 import { filter, map } from 'rxjs';
 import { from } from 'rxjs/internal/observable/from';
@@ -13,7 +14,7 @@ export class OpenAiService {
 
   data !: string;
 
-  constructor(private service : PresentService) { 
+  constructor(private service : PresentService, private route : Router) { 
   }
 
   readonly configuration = new Configuration({

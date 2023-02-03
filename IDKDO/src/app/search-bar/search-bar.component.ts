@@ -18,7 +18,7 @@ export class SearchBarComponent implements OnInit {
   listC !: Present[]
   load = false
 
-  constructor(private fb : FormBuilder, private openAi : OpenAiService, private service : PresentService) {}
+  constructor(private fb : FormBuilder, private openAi : OpenAiService, private service : PresentService, private route : Router) {}
 
   ngOnInit(): void {
     this.form = this.fb.group({
@@ -61,6 +61,8 @@ export class SearchBarComponent implements OnInit {
       if (!this.input.age) {
         if (this.input.gender) {
           query += this.input.gender;
+        } else {
+          query += "pour une personne"
         }
       } else if (this.input.age >= 18) {
         if (!this.input.gender) {
