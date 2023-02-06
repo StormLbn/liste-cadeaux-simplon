@@ -16,10 +16,14 @@ export class FavorieComponent implements OnInit {
   constructor(private http : HttpClient, private service : PresentService) {}
 
   ngOnInit() {
+    this.refreshList();
+  }
+
+  refreshList() {
+    
     this.http.get<Present[]>('http://localhost:3000/data').subscribe(result => {
       this.dataFavorie = result
     })
   }
-
 }
 
