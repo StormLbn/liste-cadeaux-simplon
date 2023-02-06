@@ -1,0 +1,24 @@
+.favoriteContain{
+    background-image: url('../../assets/img/fond_favorie.png');
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 2em;
+    h2 {
+        padding: 2em 0 2em 0;
+        margin: 0;
+        font-family: 'Ubuntu';
+        color: rgb(150, 31, 31);
+        text-align: center;
+    }
+    .presents-container  {
+        display: flex;
+        gap: 2em;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        .cardList {
+            width: 45%;
+        }
+    }
+}
+
