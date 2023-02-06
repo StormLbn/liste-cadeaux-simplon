@@ -53,6 +53,12 @@
       "description": "Offrez ce cadeau de luxe à vos proches et partez à l'aventure.",
       "prix": 1000,
       "id": 13
+    },
+    {
+      "nom": "Smartphone",
+      "description": "Le dernier modèle de smartphone Samsung avec écran OLED de 6,3 pouces et batterie longue durée",
+      "prix": 499,
+      "id": 14
     }
   ]
 }

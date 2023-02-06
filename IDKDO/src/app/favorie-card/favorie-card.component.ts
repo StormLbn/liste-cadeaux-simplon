@@ -15,5 +15,7 @@ export class FavorieCardComponent {
 
   deletePresent() : void {
     this.service.removeFavourite(this.presentFavorie);
+    alert("L'idée cadeau a bien été supprimée des favoris")
+    window.location.reload();
   }
 }
