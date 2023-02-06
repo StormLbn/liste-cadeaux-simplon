@@ -54,12 +54,11 @@ export class SearchBarComponent implements OnInit {
 
         for(let i = 0; i < this.listC.length; i++){
 
-          this.listC[i].imageUrl = this.openAi.getImageFromOpenApi(this.listC[i].description + " " + this.listC[i].description)
+          this.listC[i].imageUrl = this.openAi.getImageFromOpenApi(this.listC[i].nom + " : " + this.listC[i].description)
         }
         console.log(this.listC);
       }
     })
-    this.service.refreshList();
   }
 
   generateQuery(): string {

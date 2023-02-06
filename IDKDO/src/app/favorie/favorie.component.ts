@@ -12,7 +12,6 @@ import { PresentService } from '../services/present.service';
 export class FavorieComponent implements OnInit {
 
   @Input() dataFavorie !: Observable<Present[]>;
-  @Input() present !: Present;
 
   constructor(private http : HttpClient, private service : PresentService) {}
 

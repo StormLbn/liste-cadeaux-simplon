@@ -12,9 +12,6 @@ export class PresentsListComponent implements OnInit{
 
   @Input() listC !: Present[];
 
-  // constructor(private service : PresentService, private route : Router) {}
-
   ngOnInit() : void {
-    // this.route.navigateByUrl("recherche");
   }
 }
