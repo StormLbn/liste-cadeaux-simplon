@@ -7,6 +7,11 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { PresentIdeaComponent } from './present-idea/present-idea.component';
 import { PresentsListComponent } from './presents-list/presents-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FavorieComponent } from './favorie/favorie.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FavorieCardComponent } from './favorie-card/favorie-card.component';
+
+
 
 @NgModule({
   declarations: [
@@ -15,11 +20,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     SearchBarComponent,
     PresentIdeaComponent,
     PresentsListComponent,
+    FavorieComponent,
+    FavorieCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
