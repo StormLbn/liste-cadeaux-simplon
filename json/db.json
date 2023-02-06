@@ -2,19 +2,16 @@
         {
             "nom": "Des gants de moto",
             "description" : "Voici une belle paire de gants de moto",
-            "imageUrl": "image",
             "prix" : 59
         },
         {
             "nom": "Des bottes de moto",
             "description" : "Voici une belle paire de bottes de moto",
-            "imageUrl": "image",
             "prix" : 89
         },
         {
             "nom": "Un casque de moto",
             "description" : "Voici un casque de moto",
-            "imageUrl": "image",
             "prix" : 109
         }
     ]

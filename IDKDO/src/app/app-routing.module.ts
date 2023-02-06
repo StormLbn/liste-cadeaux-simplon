@@ -4,8 +4,8 @@ import { FavouritesComponent } from './favourites/favourites.component';
 import { PresentsListComponent } from './presents-list/presents-list.component';
 
 const routes: Routes = [
-  {path : "recherche", component : PresentsListComponent},
-  {path : "favoris", component : FavouritesComponent}
+  // {path : "recherche", component : PresentsListComponent},
+  // {path : "favoris", component : FavouritesComponent}
 ];
 
 @NgModule({

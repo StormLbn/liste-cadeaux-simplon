@@ -13,9 +13,9 @@ export class FavouritesComponent {
 
   constructor(private http : HttpClient) {}
 
-  ngOnInit(){
-    this.http.get('http://localhost:3000/data').subscribe(res => {
-    console.log('res', res)
-  })
+  ngOnInit() {
+    this.http.get<Present[]>('http://localhost:3000/data').subscribe(result => {
+      this.favList = result
+    })
   }
 }
