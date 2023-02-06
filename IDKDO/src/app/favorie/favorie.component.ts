@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, Input } from '@angular/core';
 import { Present } from '../models/present.model';
+import { PresentService } from '../services/present.service';
 
 @Component({
   selector: 'app-favorie',
@@ -9,19 +10,16 @@ import { Present } from '../models/present.model';
 })
 export class FavorieComponent implements OnInit {
 
-  dataFavorie !: any;
-  @Input() presentFavorie !: Present;
+  @Input() dataFavorie !: Present[];
+  @Input() present !: Present;
 
-  
-
-
-  constructor(private http: HttpClient){ }
+  constructor(private http : HttpClient, private service : PresentService) {}
 
   ngOnInit() {
-    this.http.get<any>('http://localhost:3000/data').subscribe(data => {
-      this.dataFavorie = data;
-      console.log(this.dataFavorie);
+    this.http.get<Present[]>('http://localhost:3000/data').subscribe(result => {
+      this.dataFavorie = result
     })
   }
 
 }
+

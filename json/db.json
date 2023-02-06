@@ -25,39 +25,6 @@
         "__zone_symbol__value": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-OsQOaPVRYwtxXrYgJ7JF107V/user-hA0bbY1knIUC5ESfY1oiHttp/img-tOLZeYAM671zHKOULZts6MKN.png?st=2023-02-06T08%3A53%3A45Z&se=2023-02-06T10%3A53%3A45Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-05T20%3A18%3A59Z&ske=2023-02-06T20%3A18%3A59Z&sks=b&skv=2021-08-06&sig=jlbi1IEdlGqZXcz6JwvuJSW%2BlDTMoKoN6JOsW/Kf2Bk%3D"
       },
       "id": 876
-    },
-    {
-      "nom": "Montre de luxe",
-      "description": "Cette magnifique montre de luxe est faite pour ceux qui veulent se faire remarquer et apprécier le style. La montre est unie, en acier et est faite avec des matéraux de qualité.",
-      "image": "https://www.example.com/montre-de-luxe.jpg",
-      "prix": 600,
-      "imageUrl": {
-        "__zone_symbol__state": true,
-        "__zone_symbol__value": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-OsQOaPVRYwtxXrYgJ7JF107V/user-hA0bbY1knIUC5ESfY1oiHttp/img-WVnBHsZuPZ7YeLCOfTNZAE1U.png?st=2023-02-06T08%3A57%3A44Z&se=2023-02-06T10%3A57%3A44Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-05T21%3A11%3A06Z&ske=2023-02-06T21%3A11%3A06Z&sks=b&skv=2021-08-06&sig=PO4L4N9TS6elg2w%2Bgo3j8Y4pId9Dj4kSwi1XlZ8xN84%3D"
-      },
-      "id": 877
-    },
-    {
-      "nom": "Bracelet manchette",
-      "description": "Bracelet manchette en plaqué or avec une collection de cœurs pour un style intemporel.",
-      "image": "https://images.unsplash.com/photo-1599409104303-7f1c9b50d7d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
-      "prix": 70,
-      "imageUrl": {
-        "__zone_symbol__state": true,
-        "__zone_symbol__value": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-OsQOaPVRYwtxXrYgJ7JF107V/user-hA0bbY1knIUC5ESfY1oiHttp/img-FpKM5vWfb4V038X7HpnnVhgq.png?st=2023-02-06T09%3A03%3A14Z&se=2023-02-06T11%3A03%3A14Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-05T21%3A09%3A41Z&ske=2023-02-06T21%3A09%3A41Z&sks=b&skv=2021-08-06&sig=1knnrdvhItOfZyZzvAHEsbiACZb/xAlpX4qNf7B4mI8%3D"
-      },
-      "id": 878
-    },
-    {
-      "nom": "Bracelet manchette",
-      "description": "Bracelet manchette en plaqué or avec une collection de cœurs pour un style intemporel.",
-      "image": "https://images.unsplash.com/photo-1599409104303-7f1c9b50d7d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
-      "prix": 70,
-      "imageUrl": {
-        "__zone_symbol__state": true,
-        "__zone_symbol__value": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-OsQOaPVRYwtxXrYgJ7JF107V/user-hA0bbY1knIUC5ESfY1oiHttp/img-FpKM5vWfb4V038X7HpnnVhgq.png?st=2023-02-06T09%3A03%3A14Z&se=2023-02-06T11%3A03%3A14Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-02-05T21%3A09%3A41Z&ske=2023-02-06T21%3A09%3A41Z&sks=b&skv=2021-08-06&sig=1knnrdvhItOfZyZzvAHEsbiACZb/xAlpX4qNf7B4mI8%3D"
-      },
-      "id": 879
     }
   ]
 }
