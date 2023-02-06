@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, Input } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Present } from '../models/present.model';
 import { PresentService } from '../services/present.service';
 
@@ -10,20 +11,14 @@ import { PresentService } from '../services/present.service';
 })
 export class FavorieComponent implements OnInit {
 
-  @Input() dataFavorie !: Present[];
+  @Input() dataFavorie !: Observable<Present[]>;
   @Input() present !: Present;
 
   constructor(private http : HttpClient, private service : PresentService) {}
 
   ngOnInit() {
-    this.refreshList();
+    this.dataFavorie = this.service.refreshList();
   }
 
-  refreshList() {
-    
-    this.http.get<Present[]>('http://localhost:3000/data').subscribe(result => {
-      this.dataFavorie = result
-    })
-  }
 }
 

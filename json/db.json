@@ -47,6 +47,24 @@
       "description": "Une tablette numérique avec les dernières technologies intégrées",
       "prix": 349,
       "id": 10
+    },
+    {
+      "nom": "Plaid en laine mérinos",
+      "description": "Un cadeau bienvenu et chaleureux ! Ce plaid en laine mérinos de qualité supérieure ajoutera une touche sophistiquée à n'importe quelle pièce.",
+      "prix": 100,
+      "id": 11
+    },
+    {
+      "nom": "IMac Pro",
+      "description": "Le tout nouvel iMac Pro d'Apple, conçu pour s'adapter à une grande variété d'utilisations professionnelles.",
+      "prix": 7999.9,
+      "id": 12
+    },
+    {
+      "nom": "Voyage de luxe",
+      "description": "Offrez ce cadeau de luxe à vos proches et partez à l'aventure.",
+      "prix": 1000,
+      "id": 13
     }
   ]
 }
