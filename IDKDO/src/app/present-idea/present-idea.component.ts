@@ -21,5 +21,6 @@ export class PresentIdeaComponent implements OnInit{
     this.service.addFavourite(this.presentIdea).subscribe(data => {
       console.log(data);
     })
+    alert("L'idée cadeau a été ajoutée aux favoris")
   }
 }

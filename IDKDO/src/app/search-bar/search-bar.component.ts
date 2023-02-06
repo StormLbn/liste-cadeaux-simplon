@@ -96,7 +96,7 @@ export class SearchBarComponent implements OnInit {
         console.log("Ajout interet");
       }
     }
-    query += "; je veux les résultats dans un fichier JSON avec les clés : nom, description, image, prix (en euros)."
+    query += "; je veux les résultats dans un fichier JSON avec les clés : nom, description, prix (en euros)."
     console.log(query);
     return query;
   }

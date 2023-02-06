@@ -20,9 +20,8 @@ export class FavorieCardComponent {
   }
 
   deletePresent() : void {
-    this.http.delete('http://localhost:3000/data/'+this.presentFavorie.id)
-    .subscribe(() => this.status = 'Delete successful');
-    alert('Bien supprimé')
+    this.service.removeFavourite(this.presentFavorie);
+    alert("L'idée cadeau a bien été supprimée des favoris");
     window.location.reload();
   }
 }
