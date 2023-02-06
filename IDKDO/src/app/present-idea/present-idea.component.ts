@@ -12,7 +12,7 @@ import { PresentService } from '../services/present.service';
 export class PresentIdeaComponent implements OnInit{
   @Input() presentIdea !: Present;
 
-  constructor(private http : HttpClient, private service : PresentService) {}
+  constructor(private service : PresentService) {}
 
   ngOnInit(): void {
   }

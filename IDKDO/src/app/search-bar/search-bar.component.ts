@@ -14,7 +14,7 @@ export class SearchBarComponent implements OnInit {
 
   form !: FormGroup;
   @Input() input !: SearchInput;
-  data !: string;
+  resultData !: string;
   @Input() listC !: Present[];
   load = false
 
@@ -34,23 +34,23 @@ export class SearchBarComponent implements OnInit {
 
   onSubmit() {
     this.load = true;
-    const data = this.form.value;
+    const formData = this.form.value;
 
     console.log(this.form.value);
 
     this.input = {
-      gender : data["gender"],
-      name : data["name"],
-      age : data["age"],
-      interest1 : data["interest1"],
-      interest2 : data["interest2"],
-      interest3 : data["interest3"]
+      gender : formData["gender"],
+      name : formData["name"],
+      age : formData["age"],
+      interest1 : formData["interest1"],
+      interest2 : formData["interest2"],
+      interest3 : formData["interest3"]
     };
     this.openAi.getDataFromOpenAI(this.generateQuery()).subscribe({
-      next : data => this.data = data
+      next : data => this.resultData = data
       , complete: ()=> {
         this.load = false
-        this.listC = JSON.parse(this.data);
+        this.listC = JSON.parse(this.resultData);
 
         for(let i = 0; i < this.listC.length; i++){
 
@@ -59,6 +59,7 @@ export class SearchBarComponent implements OnInit {
         console.log(this.listC);
       }
     })
+    this.service.refreshList();
   }
 
   generateQuery(): string {

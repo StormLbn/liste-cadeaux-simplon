@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Present } from '../models/present.model';
+import { PresentService } from '../services/present.service';
 
 @Component({
   selector: 'app-favorie-card',
@@ -10,5 +11,9 @@ export class FavorieCardComponent {
 
   @Input() presentFavorie !: Present;
 
+  constructor(private service : PresentService) {}
 
+  deletePresent() : void {
+    this.service.removeFavourite(this.presentFavorie);
+  }
 }
