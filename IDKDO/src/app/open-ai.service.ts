@@ -14,7 +14,6 @@ import { PresentService } from './services/present.service';
 export class OpenAiService {
 
   data !: string;
-  imgUrl !: Present[]
 
   constructor(private service : PresentService, private route : Router) { 
   }

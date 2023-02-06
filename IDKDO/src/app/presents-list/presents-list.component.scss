@@ -1,3 +1,10 @@
+
+.parent-presents{
+    height: 26em;
+    width: 100%;
+    overflow: hidden;
+}
+
 .presents-container {
     display: flex;
     flex-flow: column nowrap;
@@ -5,7 +12,10 @@
     height: 25em;
     align-items: center;
     margin-top: 1em;
-    overflow-y: auto;
+    
+    width: 100%;
+    overflow: auto;
+    padding-right: 20px; 
     .cardList {
         width: 80%;
     }

@@ -7,6 +7,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { PresentIdeaComponent } from './present-idea/present-idea.component';
 import { PresentsListComponent } from './presents-list/presents-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FavouritesComponent } from './favourites/favourites.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     SearchBarComponent,
     PresentIdeaComponent,
     PresentsListComponent,
+    FavouritesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

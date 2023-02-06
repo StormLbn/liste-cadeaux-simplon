@@ -1,16 +1,17 @@
 <div class="wrapper">
     <div class="present">
-        <h2>
-            {{ presentIdea.nom }}
-        </h2>
-
         <img src="{{presentIdea.imageUrl|async}}"/>
-
-        <p>
-            {{ presentIdea.description }}
-        </p>
-    <br>
-        <p>{{ presentIdea.prix}} €</p>
+        <div class="textContain">
+            <h2>
+                {{ presentIdea.nom }}
+            </h2>
+            <p>
+                {{ presentIdea.description }}
+            </p>
+        <p class="price">{{ presentIdea.prix }} €</p>
+        </div>
+        
+    
     </div>
     <div class="buttons">
         <button>Enregistrer</button>
