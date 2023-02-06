@@ -3,8 +3,13 @@
     background-image: url('../assets/img/xmas-cat.jpg');
     background-size: cover;
     background-position: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-bottom: 2em;
     .overlay {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
+        padding-bottom: 2em;
+
     }
 }
