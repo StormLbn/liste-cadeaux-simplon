@@ -1,0 +1,23 @@
+
+.parent-presents{
+    height: 28em;
+    width: 100%;
+    overflow: hidden;
+}
+
+.presents-container {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    height: 28em;
+    align-items: center;
+    margin-top: 1em;
+    
+    width: 100%;
+    overflow: auto;
+    padding-right: 20px; 
+    .cardList {
+        width: 80%;
+        margin-bottom: 2em;
+    }
+}

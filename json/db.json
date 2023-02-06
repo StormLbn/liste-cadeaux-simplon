@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "nom": "Veste en cuir",
+      "description": "Une veste en cuir pour se démarquer avec style et élégance",
+      "prix": 200,
+      "id": 4
+    },
+    {
+      "nom": "Montre connectée",
+      "description": "Une montre à la pointe de la technologie pour visualiser ses notifications",
+      "prix": 150,
+      "id": 5
+    },
+    {
+      "nom": "Trotinette électrique",
+      "description": "Une trotinette électrique pour se déplacer rapidement et facilement",
+      "prix": 450,
+      "id": 6
+    },
+    {
+      "nom": "Drone",
+      "description": "Un drone pour voler haut et s’amuser pleinement",
+      "prix": 250,
+      "id": 7
+    },
+    {
+      "nom": "Nouvel iPhone",
+      "description": "Le dernier smartphone d'Apple qui est plus puissant et intégrant de nombreuses nouvelles fonctionnalités.",
+      "prix": 1000,
+      "id": 8
+    },
+    {
+      "nom": "Téléphone portable avancé",
+      "description": "Un smartphone haut de gamme doté d'un grand écran et d'une batterie longue durée",
+      "prix": 479,
+      "id": 9
+    },
+    {
+      "nom": "IMac Pro",
+      "description": "Le tout nouvel iMac Pro d'Apple, conçu pour s'adapter à une grande variété d'utilisations professionnelles.",
+      "prix": 7999.9,
+      "id": 12
+    }
+  ]
+}

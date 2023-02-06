@@ -1,0 +1,15 @@
+<form [formGroup] = "form" (ngSubmit) = "onSubmit()">
+    <select class="selectSearch" type="text" formControlName = "gender">
+        <option value="">Genre</option>
+        <option value="un homme">Homme</option>
+        <option value="une femme">Femme</option>
+    </select>
+    <input class="inputSearch" type="prenom" placeholder="prénom" formControlName = "name"/>
+    <input class="inputSearch" type="number" placeholder="âge" formControlName = "age"/>
+    <input class="inputSearch" type="interet1" placeholder="interet1" formControlName = "interest1">
+    <input class="inputSearch" type="interet2" placeholder="interet2" formControlName = "interest2">
+    <input class="inputSearch"type="interet3" placeholder="interet3" formControlName = "interest3">
+    <button mat-raised-button color="primary" [class.spinner]="load" [disabled]="load"><img src="../../assets/img/search.png" alt="search"></button>
+</form>
+
+<app-presents-list [listC] = "listC"></app-presents-list>

@@ -1,0 +1,68 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: rgba(238, 238, 238, 0.6);
+    border-radius: 10px;
+    background-color: rgb(255 252 252 / 51%);
+}
+
+.present {
+display: flex;
+.textContain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        margin-right: 2em;
+    }
+    h2 {
+        margin: 5px 0;
+        color: darkred;
+        font-family: 'Ubuntu';
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+        transition: ease-in-out .2s;
+    }
+    a:hover {
+        color: green;
+    }
+    p {
+        text-align: justify;
+    }
+    .price {
+        font-size: 2em;
+        margin: 0;
+        color: #f8d205;
+        font-weight: bold;
+        font-style: italic;
+        font-family: 'Ubuntu';
+    }
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    gap: 2em;
+    justify-content: flex-end;
+    button {
+        background-color: gold;
+        font-weight: bold;
+        min-height: 25px;
+        border-radius: 5px;
+
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+}

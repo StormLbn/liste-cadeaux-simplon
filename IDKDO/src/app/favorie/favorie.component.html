@@ -1,0 +1,14 @@
+<div class="favoriteContain">
+    <h2>Voici les favories :</h2>
+    <div class="parent-presents">
+        <div class="presents-container">
+            <div *ngFor = "let element of dataFavorie | async" class="cardList">
+                <app-favorie-card [presentFavorie] = "element"></app-favorie-card>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

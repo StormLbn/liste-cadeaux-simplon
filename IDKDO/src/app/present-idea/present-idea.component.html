@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <div class="present">
+        <img src="{{ presentIdea.imageUrl | async }}"/>
+        <div class="textContain">
+            <h2>
+                {{ presentIdea.nom }}
+            </h2>
+            <p>
+                {{ presentIdea.description }}
+            </p>
+        <p class="price">{{ presentIdea.prix }} €</p>
+        </div>
+        
+    
+    </div>
+    <div class="buttons">
+        <button (click) = "addFavourite()">Enregistrer</button>
+        <button>Partager</button>
+    </div>
+
+</div>
