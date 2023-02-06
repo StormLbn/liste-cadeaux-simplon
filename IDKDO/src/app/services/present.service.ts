@@ -14,8 +14,6 @@ export class PresentService {
 
     addFavourite(presentIdea : Present) : Observable<any> {
         const headers = {'content-type': 'application/json'};
-        const body = JSON.stringify(presentIdea);
-        console.log(body);
-        return this.http.post(this.jsonUrl, body, {'headers':headers});
+        return this.http.post(this.jsonUrl, presentIdea, {'headers':headers});
     }
 }

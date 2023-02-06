@@ -22,16 +22,4 @@ export class FavouritesComponent {
     })
   }
 
-  addFavs() {
-    this.service.addFavourite(this.present).subscribe(data => {
-      console.log(data);
-      this.refreshFavs();
-    })
-  }
-
-  refreshFavs() {
-    this.http.get<Present[]>('http://localhost:3000/data').subscribe(result => {
-      this.favList = result
-    })
-  }
 }
