@@ -37,28 +37,10 @@
       "id": 9
     },
     {
-      "nom": "Tablette tactile",
-      "description": "Une tablette numérique avec les dernières technologies intégrées",
-      "prix": 349,
-      "id": 10
-    },
-    {
       "nom": "IMac Pro",
       "description": "Le tout nouvel iMac Pro d'Apple, conçu pour s'adapter à une grande variété d'utilisations professionnelles.",
       "prix": 7999.9,
       "id": 12
-    },
-    {
-      "nom": "Voyage de luxe",
-      "description": "Offrez ce cadeau de luxe à vos proches et partez à l'aventure.",
-      "prix": 1000,
-      "id": 13
-    },
-    {
-      "nom": "Smartphone",
-      "description": "Le dernier modèle de smartphone Samsung avec écran OLED de 6,3 pouces et batterie longue durée",
-      "prix": 499,
-      "id": 14
     }
   ]
 }
