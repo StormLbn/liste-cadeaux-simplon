@@ -35,4 +35,6 @@ export class PresentService {
     removeFavourite(presentIdea : Present) {
         this.http.delete(this.jsonUrl + presentIdea.id).subscribe();
     }
+
+    
 }
