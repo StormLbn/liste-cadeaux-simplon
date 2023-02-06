@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Present } from '../models/present.model';
 import { SearchInput } from '../models/search-input.model';
@@ -15,7 +15,7 @@ export class SearchBarComponent implements OnInit {
   form !: FormGroup;
   @Input() input !: SearchInput;
   data !: string;
-  listC !: Present[]
+  @Input() listC !: Present[];
   load = false
 
 
@@ -56,6 +56,7 @@ export class SearchBarComponent implements OnInit {
 
           this.listC[i].imageUrl = this.openAi.getImageFromOpenApi(this.listC[i].description)
         }
+        console.log(this.listC);
       }
     })
   }

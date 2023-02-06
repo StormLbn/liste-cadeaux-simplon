@@ -11,8 +11,6 @@ import { FavorieComponent } from './favorie/favorie.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FavorieCardComponent } from './favorie-card/favorie-card.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +26,7 @@ import { FavorieCardComponent } from './favorie-card/favorie-card.component';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

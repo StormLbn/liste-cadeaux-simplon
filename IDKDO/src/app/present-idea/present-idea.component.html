@@ -8,13 +8,13 @@
             <p>
                 {{ presentIdea.description }}
             </p>
-        <p class="price">{{ presentIdea.prix}} €</p>
+        <p class="price">{{ presentIdea.prix }} €</p>
         </div>
         
     
     </div>
     <div class="buttons">
-        <button>Enregistrer</button>
+        <button (click) = "addFavourite()">Enregistrer</button>
         <button>Partager</button>
     </div>
 
