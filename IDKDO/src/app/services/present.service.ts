@@ -9,11 +9,8 @@ import { Present } from "../models/present.model";
 export class PresentService {
 
     jsonUrl: string = "http://localhost:3000/data/";
-    list !: Present[];
 
     constructor(private http : HttpClient) {}
-
-
 
     // Get favourites from Json db
     refreshList() : Observable<Present[]> {

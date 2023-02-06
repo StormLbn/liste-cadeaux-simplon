@@ -4,7 +4,6 @@ import { Configuration, OpenAIApi } from 'openai';
 import { filter, map } from 'rxjs';
 import { from } from 'rxjs/internal/observable/from';
 import { environment } from 'src/environments/environment.development';
-import { Present } from './models/present.model';
 import { PresentService } from './services/present.service';
 
 
@@ -12,8 +11,6 @@ import { PresentService } from './services/present.service';
   providedIn: 'root'
 })
 export class OpenAiService {
-
-  data !: string;
 
   constructor(private service : PresentService, private route : Router) { 
   }
