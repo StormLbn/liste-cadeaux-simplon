@@ -1,12 +1,6 @@
 {
   "data": [
     {
-      "nom": "Chaussures de course",
-      "description": "Un design ergonomique conçu pour le confort et le style, offrant une grande respirabilité et une prise en main impressionnante.",
-      "prix": 120,
-      "id": 3
-    },
-    {
       "nom": "Veste en cuir",
       "description": "Une veste en cuir pour se démarquer avec style et élégance",
       "prix": 200,
