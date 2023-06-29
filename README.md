@@ -1,5 +1,5 @@
 # liste-cadeaux-simplon
-Bief Simplon : app qui génère une liste de cadeaux en utilisant ChatGPT
+Projet de formation : application qui génère une liste de cadeaux en utilisant l'API ChatGPT
 
 Pour que cette application fonctionne, il faut une clef chatgpt à jour.
 
